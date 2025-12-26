@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f6f7;
+}
+
+.header {
+    background: #1ba94c;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    height: calc(100vh - 55px);
+}
+
+.problem {
+    width: 40%;
+    background: white;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+}
+
+.problem h2 {
+    margin-bottom: 10px;
+}
+
+.problem h4 {
+    margin-top: 15px;
+}
+
+.problem pre {
+    background: #f0f0f0;
+    padding: 10px;
+}
+
+.editor {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-top {
+    background: #eeeeee;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editor-top select {
+    padding: 5px;
+}
+
+.buttons button {
+    padding: 6px 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.buttons button:first-child {
+    background: #3498db;
+    color: white;
+}
+
+.submit {
+    background: #2ecc71;
+    color: white;
+}
+
+#editor {
+    flex: 1;
+}
+
+.output {
+    background: #111;
+    color: #00ff00;
+    padding: 10px;
+    height: 140px;
+    overflow-y: auto;
+}
