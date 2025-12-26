@@ -1,19 +1,7 @@
 function login() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    // Save login state (optional, keeps test page protected)
+    localStorage.setItem("loggedIn", "true");
 
-    // Demo credentials
-    const validEmail = "test@hackerrank.com";
-    const validPassword = "12345";
-
-    if (email === validEmail && password === validPassword) {
-        // Save login state in local storage
-        localStorage.setItem("loggedIn", "true");
-
-        // Redirect to the coding test page
-        window.location.href = "index.html";
-    } else {
-        document.getElementById("error").innerText =
-            "Invalid email or password";
-    }
+    // Redirect to test page immediately
+    window.location.href = "index.html";
 }
